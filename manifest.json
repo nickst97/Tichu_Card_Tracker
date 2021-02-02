@@ -1,33 +1,34 @@
 {
-  "name":"Card Tracker for Tichu (dod)",
-  "version":"1.0",
-  "description":"Tichu: Δες ποια φύλλα δεν έχουν παιχτεί!",
-  "content_scripts":[
-     {
-        "matches":[
-           "*://apps.facebook.com/dodcommunity/*",
-           "*://www.dod.gr/*"
-        ],
-        "js":[
-           "background.js"
-        ],
-        "run_at":"document_idle"
-     }
-  ],
-  "background":{
-     "scripts":[
-        "background.js"
-        
-     ],        "persistent" : false
-
-  },
-  "permissions":[
-     "storage", "tabs", "*://apps.facebook.com/dodcommunity/*", "*://www.dod.gr/*" ]
-
-  ,
-  "browser_action":{
-     "default_icon":"icon.png",
-     "default_popup":"popup.html"
-  },
-  "manifest_version":2
+	"name":"Card Tracker for Dod Tichu",
+	"version":"1.0",
+	"description":"Tichu: Δες ποια φύλλα δεν έχουν παιχτεί!",
+	"content_scripts":[
+		{
+			"matches":[
+				"*://apps.facebook.com/dodcommunity/*",
+				"*://www.dod.gr/*"
+			],
+			"js":[
+				"background.js"
+			],
+			"run_at":"document_idle"
+		}
+	],
+	"background":{
+		"scripts":[
+			"background.js"
+		],
+		"persistent":false
+	},
+	"permissions":[
+		"storage",
+		"tabs",
+		"*://apps.facebook.com/dodcommunity/*",
+		"*://www.dod.gr/*"
+	],
+	"browser_action":{
+		"default_icon":"icon.png",
+		"default_popup":"popup.html"
+	},
+	"manifest_version":2
 }
