@@ -13,7 +13,7 @@ document.body.onload = function () {
     if (flag) {
       chrome.storage.local.set({
         RemainingCards:
-          "Mahjong,Dogs,PM,Dragon,2s,2h,2d,2c,3s,3h,3d,3c,4s,4h,4d,4c,5s,5h,5d,5c,6s,6h,6d,6c,7s,7h,7d,7c,8s,8h,8d,8c,9s,9h,9d,9c,Ts,Th,Td,Tc,Js,Jh,Jd,Jc,Qs,Qh,Qd,Qc,Ks,Kh,Kd,Kc,As,Ah,Ad,Ac,",
+          "Mahjong,Dogs,P,Dragon,2s,2h,2d,2c,3s,3h,3d,3c,4s,4h,4d,4c,5s,5h,5d,5c,6s,6h,6d,6c,7s,7h,7d,7c,8s,8h,8d,8c,9s,9h,9d,9c,Ts,Th,Td,Tc,Js,Jh,Jd,Jc,Qs,Qh,Qd,Qc,Ks,Kh,Kd,Kc,As,Ah,Ad,Ac,",
       });
     }
   });
@@ -35,7 +35,7 @@ document.body.onload = function () {
               HTMLcode += " " + "🐕";
             } else if (Card === "Dragon") {
               HTMLcode += " " + "🐉";
-            } else if (Card === "PM") {
+            } else if (Card === "P") {
               HTMLcode += " " + "🐦";
             } else {
               if (Card.charAt(0) !== PrevCardNumber) {
@@ -92,8 +92,8 @@ document.body.onload = function () {
     } else {
       var tmp =
         "<h3 style='margin:5px';> Παίξε Tichu! </h3>" +
-        "<a href='https://apps.facebook.com/dodcommunity'  target='_blank'><img src='facebook-black-24dp.svg' title='Dod Facebook' style='margin:5px';</a>" +
-        "<a href='http://dod.gr/'  target='_blank'><img src='language-black-24dp.svg' title='Dod Website' style='margin:5px';></a>";
+        "<a href='https://apps.facebook.com/dodcommunity'  target='_blank'><img src='icons/facebook24.svg' title='Dod Facebook' style='margin:5px';</a>" +
+        "<a href='http://dod.gr/'  target='_blank'><img src='icons/web24.svg' title='Dod Website' style='margin:5px';></a>";
       document.getElementById("PlayTichu").innerHTML = tmp;
     }
   });
