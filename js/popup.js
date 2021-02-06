@@ -92,8 +92,8 @@ document.body.onload = function () {
     } else {
       var tmp =
         "<h3 style='margin:5px';> Παίξε Tichu! </h3>" +
-        "<a href='https://apps.facebook.com/dodcommunity'  target='_blank'><img src='icons/facebook24.svg' title='Dod Facebook' style='margin:5px';</a>" +
-        "<a href='http://dod.gr/'  target='_blank'><img src='icons/web24.svg' title='Dod Website' style='margin:5px';></a>";
+        "<a href='https://apps.facebook.com/dodcommunity'  target='_blank'><img src='images/facebook24.svg' title='Dod Facebook' style='margin:5px';</a>" +
+        "<a href='http://dod.gr/'  target='_blank'><img src='images/web24.svg' title='Dod Website' style='margin:5px';></a>";
       document.getElementById("PlayTichu").innerHTML = tmp;
     }
   });
